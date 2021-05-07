@@ -230,7 +230,7 @@ padding-bottom: 30px;
 }
 
 .servicio-ind{
-    width: 45%;
+    width: 30%;
     text-align: center;
 }
 
@@ -286,3 +286,69 @@ footer{
     color: #ccc;
 }
 
+
+/*configuracion para adaptar a dispositivos moviles*/
+
+@media screen and (max-width:900px) {
+   header{
+       background-position: center;
+   }
+    
+   .contenedor-sobre-nosotros{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobre-nosotros .contenedor-textos{
+    width: 90%;
+}
+    .imagen-about-us{
+        width: 90%;
+    }
+
+/*galeria*/
+.imagen-port{
+    width: 44%;
+}
+
+/*que dicen nuestros clientes*/
+.cards{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards .card{
+    width: 90%;
+}
+
+.cards .card:first-child{
+    margin-bottom: 30px;
+}
+
+/*servicios*/
+.servicio-cont{
+    justify-content: center;
+    flex-direction: column;
+}
+.servicio-ind{
+    width: 100%;
+    text-align: center;
+}
+
+.servicio-ind:nth-child(1),.servicio-ind:nth-child(2){
+ margin-bottom: 60px; /*margen para la primera y segunda imagen*/
+}
+
+.servicio-ind img {
+    width: 90%;
+};
+
+.content-foo p{
+    font-size: 2;
+}
+
+
+
+}
