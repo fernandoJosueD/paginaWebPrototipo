@@ -12,8 +12,8 @@ body{
     color: #642a73;
     font-size: 30px;
     text-align: center;
-    margin-bottom: 60px;
-    margin-top: 40px;
+    margin-bottom: 50px;
+    margin-top: 5px;
 }
 
 .contenedor{
@@ -27,7 +27,7 @@ body{
 
 header{
     
-    height: 130px;
+    height: 70px;
     background: #bc4e9c;
     background-size: cover;
     position: relative;
@@ -71,8 +71,10 @@ main .portafolio{
 }
 
 .imagen-port{
- width: 25%;
- margin-bottom: 5px;
+ width: 23%;
+ margin-bottom: 25px;
+ margin-top: 10px;
+ margin-left: 10px;
  overflow: hidden;
  position: relative;
  box-shadow:  0 0 6px 0 rgba(0, 0, 0, .5); 
@@ -80,10 +82,15 @@ main .portafolio{
 }
 
 .imagen-port img{
-    width: 100%;
-    height: 100%;
+    width: 105%;
+    height: 105%;
     object-fit: cover;
     display: block;
-    
+}
+
+.hover-galeria{
+    margin-top: 5px;
+    color: #642a73;
+    font-size: 30px;
 }
 
