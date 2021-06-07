@@ -33,7 +33,7 @@ nav >a{
 }
 
 nav > a:hover{
-    text-decoration: underline;    
+    text-decoration: underline;
 }
 
 .title{
@@ -41,9 +41,10 @@ nav > a:hover{
     color: #642a73;
     text-align: center;
     font-size: 35px;
+    border-bottom: 1px solid #c5c5c5;
    /* font-weight: 300;*/
  }
- 
+
  .container{
     padding: 10px;
     width: 100%;
@@ -165,7 +166,7 @@ footer{
     .content-foo p{
         font-size: 2;
     }
-    
+
     .contenedor-footer{
         justify-content: center;
         flex-direction: column;

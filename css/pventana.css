@@ -1,0 +1,318 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'open sans';
+}
+
+/*--------------------------------------------------------------*/
+
+header{
+    height: 70px;
+    background: #bc4e9c;
+    background-size: cover;
+    position: relative;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(340, 95%, 50%, 0.459), hsla(317, 45%, 52%, 0.664)), url(../img/amarradoFrente.jpg);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(340, 95%, 50%, 0.459), hsla(317, 45%, 52%, 0.664)), url(../img/amarradoFrente.jpg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-attachment: fixed;
+    
+}
+nav{
+    text-align: right;
+    padding: 30px;
+}
+
+nav >a{
+    color: #fff;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+nav > a:hover{
+    text-decoration: underline;    
+}
+
+/*------------------------------------------------------------*/
+
+.container{ 
+    /*background-color: #9761dd;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   /* grid-template-columns:0.5fr 1fr 1fr 1fr 1fr;/*15% 60% 25%*/
+    width: 100%;
+    height: auto;
+    max-width: 1200px;
+    margin: auto;
+    padding-top: 70px;
+    padding-bottom: 70px;
+   /* margin-top: 40px;*/
+
+}
+
+/*imagen peque;a */
+.imgLateral {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-evenly;
+}
+.imgLateral img{
+    margin: 5px;
+    width: 104px;
+    border-radius: 5px;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5); /*agrega sombra*/
+    padding: 3px;
+}
+.imgLateral img:hover{
+    border: 1px solid #f077e0;
+    box-shadow: 0 0 6px 0 rgba(182, 27, 130, 0.5); /*agrega sombra*/
+}
+/*logotipos de redes sociales*/
+.logos-redes{
+    width: 100%;
+    display: flex;
+     justify-content: space-around;
+     padding: 10px;
+     align-items: center;
+}
+
+.logos-redes img{
+    width: 35px;
+}
+
+/*logotipos de redes sociales*/
+
+/*imagen foco */
+.imgFoco{
+    padding: 0;
+    margin: 0;
+    justify-content: flex-start;
+    max-width: 550px;
+    max-height: 450px;
+  
+}
+.imgFoco img{
+    width: 90%;  /*se reduce para que quepa el efecto lupa*/
+    height: auto;
+    padding: 0px;
+    border-radius: 10px;
+}
+
+/*texto o informacion*/
+.textoInformacion{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    align-self: flex-start;
+    padding-left: 10px;
+    padding-right: 10px;
+    max-width: 300px;
+   
+}
+
+.textoInformacion h1{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #642a73;
+    font-size: 30px;
+    display: flex;
+    border-bottom: 1px solid #c5c5c5;
+    margin-bottom: 0;
+
+}
+
+.textoInformacion h2{
+    text-align: center;
+     color: #642a73;
+     font-size: 10px;
+     display: flex;
+     font-weight: 200;
+ }
+ 
+ .textoInformacion .precio{
+     font-size: 15px;
+     margin-top: 15px;
+     margin-bottom: 15px;
+     color: #000000;
+     font-weight:600 ;
+     border-bottom: 1px solid #c5c5c5;
+ }
+ .textoInformacion li{
+    list-style: disc;
+    color: #7a7a7a;
+    font-size: 10px;
+ }
+.textoInformacion p{
+    text-align: left;
+    font-size: 14px;
+    font-weight: 500;
+    color: #5a5a5a;
+    margin-bottom: 2px;
+}
+/*configuracion de iconos sociales*/
+.iconos-redes{
+    display: flex;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.iconos-redes ul.iconos{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row ;
+    justify-content: space-evenly;
+}
+
+.iconos >li{
+    
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    
+}
+
+
+/*svg de whattapp*/
+#what{
+    fill: #35a812;
+}
+/*svg de instagram*/
+#inst{
+    fill:  #DD5E89;  /* fallback for old browsers */
+    fill: -webkit-linear-gradient(to right, #F7BB97, #DD5E89);  /* Chrome 10-25, Safari 5.1-6 */
+    fill: linear-gradient(to right, #F7BB97, #DD5E89); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    ;
+}
+/*svg de messiguer*/
+
+
+/* footer*/
+footer{
+    background: #414141;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+.content-foo{
+    text-align: center;
+}
+.content-foo h4{
+    color: #fff;
+    border-bottom: 3px solid #af20d3;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+.content-foo p{
+    color: #ccc;
+}
+
+.titulo-final{
+    text-align: center;
+    font-size: 24px;
+    margin: 20px 0 0 0 ;
+    color: #ccc;
+}
+
+@media screen and (max-width:900px) {
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    header{
+        height: 80px;
+        margin-top: 0;
+    }
+
+    nav > a{
+        font-size: 14px;
+    }
+   
+    .container{
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        padding-top: 20px;
+        padding-bottom: 40px;
+        
+    }
+    .container .imgLateral{
+        order: 2;
+        flex-direction: row;
+        width: 100%;
+        margin-top: 30px;
+        margin-bottom: 50px;
+        padding: 0;
+        padding: 8px;
+    }
+    .imgLateral img{
+        width: 85px;
+        height: auto;
+        display: flex;
+        box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5); /*agrega sombra*/
+    }
+
+    .container .imgFoco{
+     order: 3;
+     max-width: 100%;
+     height: auto; 
+     display: flex; 
+     justify-content: center;
+     background: none;
+    }
+    .imgFoco img{
+        display: flex;
+        width: 90%;
+        height: auto;
+    }
+
+    .textoInformacion{
+        order: 1;
+        margin: auto;
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .content-foo p{
+        font-size: 2;
+    }
+    
+    .contenedor-footer{
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    
+
+}
+
+
