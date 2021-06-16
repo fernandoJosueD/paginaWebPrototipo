@@ -245,7 +245,12 @@ footer{
         margin: 0;
         padding: 0;
     }
-
+    /*bloquea la funcion de zoom de javascript*/
+    .block__pic{
+        pointer-events: none;
+        cursor: default;
+    }
+/*------------------------------------------------*/
     header{
         height: 80px;
         margin-top: 0;

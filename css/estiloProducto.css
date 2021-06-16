@@ -63,6 +63,7 @@ nav > a:hover{
     display: flex;
     justify-content: center;
     text-decoration: none;
+    flex-wrap: wrap;
 }
 
 .container .card{
@@ -80,15 +81,27 @@ nav > a:hover{
     margin-bottom: 30px;
     transition: all 0.25s;
 }
-
+/*hover anidado por decirlo asi lo cual se efectua despues de po
+sar el mouse encima de la card seguido del elemento h4*/
 .container .card:hover{
     transform: translate(-3px);
     box-shadow: 0 4px 16px rgba(0, 0, 1, 0.404);
-    background: #f1f1f1;
-    text-decoration: #fff;
+    background: #f8f8f8;
     text-transform: initial;
 }
+.container .card:hover h4{
+    transform: translate(15px 15px 15px 15px);
+    box-shadow: 0 4px 16px rgba(0, 0, 1, 0.404);
+    background:#9d9ce1;
+    text-decoration: rgb(145, 145, 145);
+    text-transform: initial;
+    color: #fff;
+}
 
+.container .card:hover p{
+    transform: translate(15px 15px 15px 15px);
+    color: #59076d;
+}
 
 .container .card img{
     margin: 5px;
@@ -108,6 +121,7 @@ nav > a:hover{
     border-bottom: 1px solid #dadada;
     transition: all 0.25s;
 }
+/*
 .container .card h4:hover{
     transform: translate(15px 15px 15px 15px);
     box-shadow: 0 4px 16px rgba(0, 0, 1, 0.404);
@@ -115,7 +129,7 @@ nav > a:hover{
     text-decoration: rgb(145, 145, 145);
     text-transform: initial;
     color: #fff;
-}
+}*/
 /*-----------------*/
 .container .card p{
     padding: 20px;
@@ -123,9 +137,6 @@ nav > a:hover{
     color: rgb(0, 0, 0);
     text-decoration: none;
     font-weight: 500;
-}
-.container .card p:hover {
-    background: rgb(46, 166, 202);
 }
 
 .about-services{
@@ -181,6 +192,11 @@ footer{
 @media screen and (max-width:900px) {
     header{
         height: 80px;
+    }
+    .about-services{
+        /*modificar para pantalla de diferentes tama;os*/
+        display: flex;
+        flex-wrap: wrap;
     }
 
     nav > a{
