@@ -1,0 +1,70 @@
+/*colores de pagina*/
+:root{
+    --color-primario: #9D9CE1;
+    --color-secundario: #bc4e9c;
+    --color-titulo: #642A73;
+    --color-texto:#000;
+    --background-fondo: #4D0686;
+    --liea-divisoria-footer: #AF20D3;
+    --background-footer:#414141;
+    --titulo-footer: #FFFFFF;
+    --texto-footer: #CCCCBF;
+    --nombre-footer:#CCCCCC;
+    --bacgroudn-pagina: #fff;   
+    --texto-nav: #fff;
+    --texto-blaco:#fff;
+}
+header{
+/*deja estatica la imagen con un color transparente*/
+    width: 100%;
+    height: 700px;
+ /* fallback for old browsers */
+    background: linear-gradient(to right, hsla(23, 89%, 54%, 0.644), hsla(352, 79%, 58%, 0.623), hsla(302, 60%, 34%, 0.63)), url(../img/darkar.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, hsla(23, 89%, 54%, 0.644), hsla(352, 79%, 58%, 0.623), hsla(302, 60%, 34%, 0.63)), url(../img/darkar.jpg); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+nav{
+    text-align: right;
+    padding: 30px 50px 0 0;
+}
+nav > a{
+    color: var(--texto-nav);
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+nav > a:hover{
+    text-decoration: underline;
+}
+
+header .textos-header{
+    display: flex;
+    height: 430px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align:center;
+}
+
+.textos-header h1{
+    font-size: 40px;
+    color: var(--texto-nav);
+}
+
+.textos-header h2{
+    font-size: 40px;
+    font-weight: 300;
+    color: var(--texto-nav);
+}
+
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}

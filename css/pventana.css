@@ -1,3 +1,25 @@
+@import url(cabecera.css); /*import configuracion de cabecera*/
+@import url(footer.css); /*import configuacion de footer*/
+
+:root{
+    --color-primario: #9D9CE1;
+    --color-secundario: #bc4e9c;
+    --color-titulo: #642A73;
+    --color-texto:#000;
+    --background-fondo: #4D0686;
+    --liea-divisoria-footer: #AF20D3;
+    --background-footer:#414141;
+    --titulo-footer: #FFFFFF;
+    --texto-footer: #CCCCBF;
+    --nombre-footer:#CCCCCC;
+    --bacgroudn-pagina: #fff;   
+    --texto-nav: #fff;
+    --texto-blaco:#fff;
+}
+
+
+
+
 *{
     margin: 0;
     padding: 0;
@@ -7,39 +29,6 @@
 body {
     font-family: 'open sans';
 }
-
-/*--------------------------------------------------------------*/
-
-header{
-    height: 70px;
-    background: #bc4e9c;
-    background-size: cover;
-    position: relative;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, hsla(340, 95%, 50%, 0.459), hsla(317, 45%, 52%, 0.664)), url(../img/amarradoFrente.jpg);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, hsla(340, 95%, 50%, 0.459), hsla(317, 45%, 52%, 0.664)), url(../img/amarradoFrente.jpg);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background-attachment: fixed;
-    
-}
-nav{
-    text-align: right;
-    padding: 30px;
-}
-
-nav >a{
-    color: #fff;
-    font-weight: 300;
-    text-decoration: none;
-    margin-right: 10px;
-}
-
-nav > a:hover{
-    text-decoration: underline;    
-}
-
-/*------------------------------------------------------------*/
 
 .container{ 
     /*background-color: #9761dd;*/
@@ -73,8 +62,8 @@ nav > a:hover{
     padding: 3px;
 }
 .imgLateral img:hover{
-    border: 1px solid #f077e0;
-    box-shadow: 0 0 6px 0 rgba(182, 27, 130, 0.5); /*agrega sombra*/
+    border: 1px solid var(--background-fondo);
+    box-shadow: 0 0 6px 0 var(--background-fondo); /*agrega sombra*/
 }
 
 /*imagen foco */
@@ -120,7 +109,7 @@ nav > a:hover{
 
 .textoInformacion h2{
     text-align: center;
-     color: #642a73;
+     color: var(--color-titulo);
      font-size: 10px;
      display: flex;
      font-weight: 200;
@@ -130,20 +119,20 @@ nav > a:hover{
      font-size: 15px;
      margin-top: 15px;
      margin-bottom: 15px;
-     color: #000000;
+     color: var(--color-texto);
      font-weight:600 ;
-     border-bottom: 1px solid #c5c5c5;
+     border-bottom: 1px solid var(--nombre-footer);
  }
  .textoInformacion li{
     list-style: disc;
-    color: #7a7a7a;
+    color: var(--color-texto);
     font-size: 10px;
  }
 .textoInformacion p{
     text-align: left;
     font-size: 14px;
     font-weight: 500;
-    color: #5a5a5a;
+    color: var(--color-texto);
     margin-bottom: 2px;
 }/*configuracion de iconos sociales*/
 .iconos-redes{
@@ -197,42 +186,6 @@ nav > a:hover{
 }
 
 
-/* footer*/
-footer{
-    background: #414141;
-    padding: 60px 0 30px 0;
-    margin: auto;
-    overflow: hidden;
-}
-
-.contenedor-footer{
-    display: flex;
-    width: 90%;
-    justify-content: space-evenly;
-    margin: auto;
-    padding-bottom: 50px;
-    border-bottom: 1px solid #ccc;
-}
-
-.content-foo{
-    text-align: center;
-}
-.content-foo h4{
-    color: #fff;
-    border-bottom: 3px solid #af20d3;
-    padding-bottom: 5px;
-    margin-bottom: 10px;
-}
-.content-foo p{
-    color: #ccc;
-}
-
-.titulo-final{
-    text-align: center;
-    font-size: 24px;
-    margin: 20px 0 0 0 ;
-    color: #ccc;
-}
 
 @media screen and (max-width:1000) {
     
@@ -245,8 +198,6 @@ footer{
         justify-content: center;
     }
 }
-
-
 
 @media screen and (max-width:900px) {
     *{

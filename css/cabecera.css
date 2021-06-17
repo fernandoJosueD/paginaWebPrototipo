@@ -1,0 +1,25 @@
+header{
+    height: 70px;
+    background-size: cover;
+    position: relative;
+
+    background: -webkit-linear-gradient(to right, hsla(340, 95%, 50%, 0.459), hsla(317, 45%, 52%, 0.664)), url(../img/amarradoFrente.jpg);
+    background: linear-gradient(to right, hsla(340, 95%, 50%, 0.459), hsla(317, 45%, 52%, 0.664)), url(../img/amarradoFrente.jpg);
+    background-attachment: fixed;
+    
+}
+nav{
+    text-align: right;
+    padding: 30px;
+}
+
+nav >a{
+    color: var(--texto-nav);
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+nav > a:hover{
+    text-decoration: underline;    
+}
