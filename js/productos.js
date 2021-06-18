@@ -133,3 +133,21 @@ fotod.onmouseover = function(){
 }
 
 }
+/*bota nubok negra*/
+function  botaNubok () {
+    var fotoa = document.getElementById("fotoa");
+var fotob = document.getElementById("fotob");
+var fotoc = document.getElementById("fotoc");
+var img = document.getElementById("imagen");
+
+fotoa.onmouseover = function(){
+    img.src = "../img/producto/botaNubok (1).jpg";
+}
+fotob.onmouseover = function(){
+    img.src = "../img/producto/botaNubok (2).jpg";
+}
+fotoc.onmouseover = function(){
+    img.src = "../img/producto/botaNubok (3).jpg";
+}
+
+}
