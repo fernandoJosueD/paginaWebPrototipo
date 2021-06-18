@@ -121,14 +121,17 @@ sar el mouse encima de la card seguido del elemento h4*/
     margin-bottom: 1px;
     border-bottom: 1px solid var(--nombre-footer);
     transition: all 0.25s;
+    margin-bottom: 20px;
 }
 
 .container .card p{
-    padding: 20px;
     font-size: 14px;
     color: var(--color-texto) ;
     text-decoration: none;
     font-weight: 500;
+    margin-left:15px ;
+    margin-right: 15px;
+    line-height : 20px;
 }
 
 .about-services{

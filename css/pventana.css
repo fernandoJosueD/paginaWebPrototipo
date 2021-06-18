@@ -41,7 +41,7 @@ body {
     max-width: 1200px;
     margin: auto;
     padding-top: 70px;
-    padding-bottom: 70px;
+    padding-bottom: 5px;
    /* margin-top: 40px;*/
 
 }
@@ -134,11 +134,13 @@ body {
     font-weight: 500;
     color: var(--color-texto);
     margin-bottom: 2px;
-}/*configuracion de iconos sociales*/
+}
+/*configuracion de iconos sociales*/
 .iconos-redes{
     width: 100%;
     display: flex;
     align-content: flex-end;
+    padding-bottom: 40px;
 }
 .iconos-redes ul.iconos{
     width: 85%;
